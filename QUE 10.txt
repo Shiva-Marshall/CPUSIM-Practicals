@@ -1,0 +1,13 @@
+START: READ
+       JMPN DONE
+       ADD SUM
+       STA SUM
+       JUMP START
+
+
+DONE:  LDA SUM
+       WRITE
+       STOP
+
+
+SUM:   .data 2 0
